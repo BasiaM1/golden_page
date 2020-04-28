@@ -192,4 +192,39 @@ section {
 }
 
 /*Footer*/
+.page-footer {
+  margin-top: 20px;
+}
+
+.page-footer p {
+  text-align: center;
+  line-height: 118px;
+}
+
+.footer-list {
+  line-height: 118px;
+  text-align: left;
+}
+
+.footer-list li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 0;
+}
+
+.footer-list i {
+  font-size: 30px;
+  background: #2c2c54;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: #ffff;
+  border-radius: 50%;
+  transition: all 1s;
+  text-align: center;
+}
+
+.footer-list i:hover {
+  transform: scale(1.5);
+}
 /*# sourceMappingURL=style.css.map */
