@@ -1,7 +1,7 @@
 # golden_page
 
-Simple template of landing page using following technologies:
+Simple template of landing page using following technologies:<br>
 • HTML
-• SCSS
-• Boostrap frontend template
-Also it uses task-runner.
+• SCSS<br>
+• Boostrap frontend template<br>
+Also it uses task-runner.<br>
