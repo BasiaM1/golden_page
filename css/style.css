@@ -13,6 +13,7 @@ body {
   line-height: 1.7;
   font-family: "Open Sans", sans-serif;
   color: #2c2c54;
+  text-align: center;
 }
 
 .container {
@@ -28,6 +29,7 @@ section {
 /*Splash*/
 .splash {
   position: relative;
+  height: 100vh;
   background-image: url("../images/splash.jpg");
   background-position: center center;
   background-size: cover;
@@ -123,10 +125,39 @@ section {
 
 .navigation a {
   text-decoration: none;
+  text-transform: uppercase;
   color: #ffff;
 }
 
 .navigation a:hover {
   color: #fdd135;
+}
+
+/*Services*/
+.services-header .services-title {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.services-header p {
+  margin-bottom: 40px;
+}
+
+.services .row i {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border: 2px solid #fdd135;
+  border-radius: 50%;
+  font-size: 25px;
+  color: #fdd135;
+}
+
+.services .row h3 {
+  text-transform: capitalize;
+}
+
+.services .col-md-4 {
+  padding-right: 15px;
 }
 /*# sourceMappingURL=style.css.map */
