@@ -1,0 +1,135 @@
+/*Variables*/
+/*Global*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: "Open Sans", sans-serif;
+  color: #2c2c54;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 96px 0;
+}
+
+/*Splash*/
+.splash {
+  position: relative;
+  background-image: url("../images/splash.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffff;
+  text-align: center;
+  font-family: "Domine", serif;
+}
+
+.splash::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-color: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+
+.main-splash {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.splash-inner {
+  margin: auto;
+  max-width: 70%;
+  margin-bottom: 60px;
+}
+
+.splash-inner .page-title {
+  position: relative;
+  margin: 60px 0 0 0;
+  font-size: 40px;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+.splash-inner .page-subtitle {
+  position: relative;
+  margin: 24px 0 0;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.splash-inner .btn {
+  display: inline-block;
+  position: relative;
+  min-width: 160px;
+  margin: 24px auto 0 auto;
+  padding: 16px;
+  background-color: #fed136;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  font-family: "Open Sans", sans-serif;
+  color: #ffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.splash-inner .btn:hover {
+  background-color: #ffff;
+  color: #fed136;
+}
+
+/* Navigation */
+.navigation {
+  padding: 12px 0;
+}
+
+.navigation .logo a {
+  margin: 0 80px 0 40px;
+  font-size: 26px;
+  color: #fdd135;
+  text-decoration: none;
+  font-family: "Great Vibes", cursive;
+  font-weight: 700;
+}
+
+.navigation ul.menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation ul.menu li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.navigation a:hover {
+  color: #fdd135;
+}
+/*# sourceMappingURL=style.css.map */
