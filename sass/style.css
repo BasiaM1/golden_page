@@ -233,4 +233,65 @@ section {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
+
+/* Media */
+@media (max-width: 767px) {
+  section {
+    padding: 40px 0;
+  }
+  .container {
+    padding: 0;
+  }
+  .splash-inner .page-title,
+  .splash-inner .services-title,
+  .splash-inner .portfolio-title,
+  .services-header .page-title,
+  .services-header .services-title,
+  .services-header .portfolio-title,
+  .portfolio-header .page-title,
+  .portfolio-header .services-title,
+  .portfolio-header .portfolio-title {
+    font-size: 30px;
+  }
+  /* Splash */
+  .navigation .logo {
+    margin-bottom: 20px;
+  }
+  .splash-inner .page-subtitle {
+    font-size: 40px;
+  }
+  .navigation ul li {
+    margin-right: 15px;
+  }
+  /* Portfolio */
+  .portfolio .col-md-4 {
+    margin: 0 50px;
+  }
+  .portfolio-box {
+    margin: 10px auto;
+    width: 70%;
+  }
+  /* Footer */
+  .page-footer {
+    margin: 0;
+  }
+  .page-footer p {
+    text-align: center;
+    line-height: 50px;
+  }
+  .footer-list i {
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .footer-list {
+    line-height: 50px;
+    text-align: center;
+  }
+  .footer-list i:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
 /*# sourceMappingURL=style.css.map */
