@@ -1,357 +1,349 @@
 /*Variables*/
-$font-header: 'Domine',
-serif;
-$font-text: 'Open Sans',
-sans-serif;
-$font-logo: 'Great Vibes',
-cursive;
+$font-header: "Domine", serif;
+$font-text: "Open Sans", sans-serif;
+$font-logo: "Great Vibes", cursive;
 $color-main: #2c2c54;
-$color-splash:#ffff;
-$color-gold:#fdd135;
-$color-btn:#fed136;
+$color-splash: #ffff;
+$color-gold: #fdd135;
+$color-btn: #fed136;
 $transition: all 1s;
 
 /*Global*/
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    line-height: 1.7;
-    font-family: $font-text;
-    color: $color-main;
-    text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: $font-text;
+  color: $color-main;
+  text-align: center;
 }
 
 .container {
-    max-width: 1140px;
-    padding: 0 20px;
-    margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 section {
-    padding: 96px 0;
+  padding: 96px 0;
 }
 
 .services-header,
 .portfolio-header {
+  .services-title,
+  .portfolio-title {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 0;
+  }
 
-    .services-title,
-    .portfolio-title {
-        font-size: 40px;
-        text-transform: uppercase;
-        margin: 0;
-    }
-
-    p {
-        margin-bottom: 40px;
-    }
+  p {
+    margin-bottom: 40px;
+  }
 }
 
 .services,
 .portfolio {
-    h3 {
-        text-transform: capitalize;
-    }
+  h3 {
+    text-transform: capitalize;
+  }
 }
 
 /*Splash*/
 
 .splash {
-    position: relative;
-    // height: 100vh;
-    background-image: url("../images/splash.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    color: $color-splash;
-    text-align: center;
-    font-family: $font-header;
+  position: relative;
+  // height: 100vh;
+  background-image: url("../images/splash.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: $color-splash;
+  text-align: center;
+  font-family: $font-header;
 }
 
 .splash::before {
-    position: absolute;
-    content: "";
-    display: block;
-    background-color: #000;
-    opacity: 0.5;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  content: "";
+  display: block;
+  background-color: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
 }
 
 .main-splash {
-    display: flex;
-    // nie działa...
-    // height:100%;
-    // justify-content: center;
-    // align-items: center;
+  display: flex;
+  // nie działa...
+  // height:100%;
+  // justify-content: center;
+  // align-items: center;
 }
 
 .splash-inner {
-    margin: auto;
-    max-width: 70%;
-    margin-bottom: 60px;
+  margin: auto;
+  max-width: 70%;
+  margin-bottom: 60px;
 }
 
 .splash-inner {
-    .page-title {
-        position: relative;
-        margin: 60px 0 0 0;
-        font-size: 40px;
-        font-style: italic;
-        text-transform: capitalize;
+  .page-title {
+    position: relative;
+    margin: 60px 0 0 0;
+    font-size: 40px;
+    font-style: italic;
+    text-transform: capitalize;
+  }
+}
+
+.splash-inner {
+  .page-subtitle {
+    position: relative;
+    margin: 24px 0 0;
+    font-size: 60px;
+    text-transform: uppercase;
+  }
+}
+
+.splash-inner {
+  .btn {
+    display: inline-block;
+    position: relative;
+    min-width: 160px;
+    margin: 24px auto 0 auto;
+    padding: 16px;
+    background-color: $color-btn;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    font-family: $font-text;
+    color: $color-splash;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      background-color: $color-splash;
+      color: $color-btn;
     }
-}
-
-.splash-inner {
-    .page-subtitle {
-        position: relative;
-        margin: 24px 0 0;
-        font-size: 60px;
-        text-transform: uppercase;
-    }
-}
-
-.splash-inner {
-    .btn {
-        display: inline-block;
-        position: relative;
-        min-width: 160px;
-        margin: 24px auto 0 auto;
-        padding: 16px;
-        background-color: $color-btn;
-        border-radius: 5px;
-        border-width: 2px;
-        border-style: solid;
-        font-family: $font-text;
-        color: $color-splash;
-        text-decoration: none;
-        text-transform: uppercase;
-        cursor: pointer;
-        transition: $transition;
-
-        &:hover {
-            background-color: $color-splash;
-            color: $color-btn;
-        }
-    }
+  }
 }
 
 /* Navigation */
 
 .navigation {
-    padding: 12px 0;
+  padding: 12px 0;
 }
 
 .navigation {
-    .logo {
-        a {
-            margin: 0 80px 0 40px;
-            font-size: 26px;
-            color: $color-gold;
-            text-decoration: none;
-            font-family: $font-logo;
-            font-weight: 700;
-        }
-    }
-}
-
-.navigation {
-    ul.menu {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-
-        li {
-            display: inline-block;
-            margin-right: 40px;
-        }
-    }
-}
-
-.navigation {
+  .logo {
     a {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: $color-splash;
-
-        &:hover {
-            color: $color-gold;
-        }
+      margin: 0 80px 0 40px;
+      font-size: 26px;
+      color: $color-gold;
+      text-decoration: none;
+      font-family: $font-logo;
+      font-weight: 700;
     }
+  }
+}
+
+.navigation {
+  ul.menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+      margin-right: 40px;
+    }
+  }
+}
+
+.navigation {
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-splash;
+
+    &:hover {
+      color: $color-gold;
+    }
+  }
 }
 
 /*Services*/
 
 .services {
-    .row {
-        i {
-
-            width: 70px;
-            height: 70px;
-            line-height: 70px;
-            border: 2px solid $color-gold;
-            border-radius: 50%;
-            font-size: 25px;
-            color: $color-gold;
-        }
+  .row {
+    i {
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      border: 2px solid $color-gold;
+      border-radius: 50%;
+      font-size: 25px;
+      color: $color-gold;
     }
+  }
 }
 
 .services {
-    .col-md-4 {
-        padding-right: 15px;
-    }
+  .col-md-4 {
+    padding-right: 15px;
+  }
 }
 
 /* Portfolio */
 .portfolio {
-    background: #f0f0f0;
+  background: #f0f0f0;
 }
 
 .portfolio {
-    p {
-        font-style: italic;
-    }
+  p {
+    font-style: italic;
+  }
 }
 
 .portfolio-box {
-    margin: 20px 0;
-    background: $color-splash;
+  margin: 20px 0;
+  background: $color-splash;
 
-    h3,
-    p {
-        margin: 0;
-    }
+  h3,
+  p {
+    margin: 0;
+  }
 }
 
 .portfolio-image img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 /*Footer*/
 
 .page-footer {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .page-footer p {
-    text-align: center;
-    line-height: 118px;
+  text-align: center;
+  line-height: 118px;
 }
 
 .footer-list {
-    line-height: 118px;
-    text-align: left;
+  line-height: 118px;
+  text-align: left;
 }
 
 .footer-list {
-    li {
-        display: inline-block;
-        margin-right: 20px;
-        font-size: 0;
-    }
+  li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 0;
+  }
 }
 
 .footer-list i {
-    font-size: 30px;
-    background: $color-main;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    color: $color-splash;
-    border-radius: 50%;
-    transition: $transition;
-    text-align: center;
+  font-size: 30px;
+  background: $color-main;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: $color-splash;
+  border-radius: 50%;
+  transition: $transition;
+  text-align: center;
 }
 
 .footer-list i:hover {
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 /* Media */
 @media (max-width: 767px) {
+  section {
+    padding: 40px 0;
+  }
 
-    section {
-        padding: 40px 0;
+  .container {
+    padding: 0;
+  }
+
+  .splash-inner,
+  .services-header,
+  .portfolio-header {
+    .page-title,
+    .services-title,
+    .portfolio-title {
+      font-size: 30px;
     }
+  }
 
-    .container {
-        padding: 0;
+  /* Splash */
+
+  .navigation {
+    .logo {
+      margin-bottom: 20px;
     }
+  }
 
-    .splash-inner,
-    .services-header,
-    .portfolio-header {
-
-        .page-title,
-        .services-title,
-        .portfolio-title {
-            font-size: 30px;
-        }
+  .splash-inner {
+    .page-subtitle {
+      font-size: 40px;
     }
+  }
 
-    /* Splash */
+  .navigation ul li {
+    margin-right: 15px;
+  }
 
-    .navigation {
-        .logo {
-            margin-bottom: 20px;
-        }
+  /* Portfolio */
+  .portfolio {
+    .col-md-4 {
+      margin: 0 50px;
     }
+  }
 
+  .portfolio-box {
+    margin: 10px auto;
+    width: 70%;
+  }
 
-    .splash-inner {
-        .page-subtitle {
-            font-size: 40px;
-        }
-    }
+  /* Footer */
+  .page-footer {
+    margin: 0;
+  }
 
-    .navigation ul li {
-        margin-right: 15px;
-    }
+  .page-footer p {
+    text-align: center;
+    line-height: 50px;
+  }
 
-    /* Portfolio */
-    .portfolio {
-        .col-md-4 {
-            margin: 0 50px;
-        }
-    }
+  .footer-list i {
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
 
-    .portfolio-box {
-        margin: 10px auto;
-        width: 70%
-    }
+  .footer-list {
+    line-height: 50px;
+    text-align: center;
+  }
 
-    /* Footer */
-    .page-footer {
-        margin: 0;
-    }
-
-    .page-footer p {
-        text-align: center;
-        line-height: 50px;
-    }
-
-    .footer-list i {
-        font-size: 25px;
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-    }
-
-    .footer-list {
-        line-height: 50px;
-        text-align: center;
-    }
-
-    .footer-list i:hover {
-        transform: scale(1.2);
-    }
+  .footer-list i:hover {
+    transform: scale(1.2);
+  }
 }
